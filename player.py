@@ -17,16 +17,16 @@ class Player:
         speed_cos = speed * cos_a
 
         keys = pg.key.get_pressed()
-        if keys[pg.K_d]:
+        if keys[pg.K_w]:
             dx = dx + speed_cos
             dy = dy + speed_sin
-        if keys[pg.K_a]:
+        if keys[pg.K_s]:
             dx = dx - speed_cos
             dy = dy - speed_sin
-        if keys[pg.K_w]:
+        if keys[pg.K_a]:
             dx = dx + speed_sin
             dy = dy - speed_cos
-        if keys[pg.K_s]:
+        if keys[pg.K_d]:
             dx = dx - speed_sin
             dy = dy + speed_cos
 
